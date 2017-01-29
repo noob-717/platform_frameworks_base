@@ -23,7 +23,6 @@ import android.animation.AnimatorListenerAdapter;
 import android.animation.ObjectAnimator;
 import android.app.ActivityOptions.OnAnimationStartedListener;
 import android.content.Context;
-import android.content.ContentResolver;
 import android.content.res.Configuration;
 import android.database.ContentObserver;
 import android.graphics.Canvas;
@@ -929,7 +928,7 @@ public class RecentsView extends FrameLayout {
          }
 
          void unobserve() {
-             resolver.unregisterContentObserver(this);
+             mContext.getContentResolver().unregisterContentObserver(this);
          }
 
          @Override
@@ -942,4 +941,3 @@ public class RecentsView extends FrameLayout {
                 Settings.System.SHOW_CLEAR_ALL_RECENTS, 0, UserHandle.USER_CURRENT) != 0;
          }
      }
-}
