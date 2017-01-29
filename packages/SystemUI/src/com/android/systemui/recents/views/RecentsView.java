@@ -941,3 +941,4 @@ public class RecentsView extends FrameLayout {
                 Settings.System.SHOW_CLEAR_ALL_RECENTS, 0, UserHandle.USER_CURRENT) != 0;
          }
      }
+}   
