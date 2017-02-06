@@ -3604,7 +3604,7 @@ public final class Settings {
          * Manual override picture to use
          * @hide
          */
-        public static final String STATUS_BAR_CUSTOM_HEADER_IMAGE = "status_bar_custom_header_image"
+        public static final String STATUS_BAR_CUSTOM_HEADER_IMAGE = "status_bar_custom_header_image";
          
         /**
          * show clear all recents button
